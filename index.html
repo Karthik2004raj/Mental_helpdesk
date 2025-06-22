@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="header-content">
+                    <div class="logo">
+                        <i class="fas fa-heart"></i>
+                        <h1>Mental Health Support</h1>
+                    </div>
+                    <p class="subtitle">A safe space to share your thoughts and feelings</p>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <div class="avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="text">
+                            <p>Hello! I'm here to listen and support you. You can share anything that's on your mind - whether you're feeling down, anxious, or just need someone to talk to. What would you like to discuss today?</p>
+                        </div>
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <input type="text" id="messageInput" placeholder="Share what's on your mind..." autocomplete="off">
+                    <button id="sendButton" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="quick-replies" id="quickReplies">
+                    <button class="quick-reply" data-message="I'm feeling depressed">I'm feeling depressed</button>
+                    <button class="quick-reply" data-message="I'm anxious">I'm anxious</button>
+                    <button class="quick-reply" data-message="I lost someone important">I lost someone important</button>
+                    <button class="quick-reply" data-message="I need motivation">I need motivation</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="resources-panel">
+            <h3>Helpful Resources</h3>
+            <div class="resource-item">
+                <i class="fas fa-phone"></i>
+                <span>National Suicide Prevention Lifeline: 988</span>
+            </div>
+            <div class="resource-item">
+                <i class="fas fa-globe"></i>
+                <span>Crisis Text Line: Text HOME to 741741</span>
+            </div>
+            <div class="resource-item">
+                <i class="fas fa-info-circle"></i>
+                <span>This is not a substitute for professional help</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
